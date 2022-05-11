@@ -11,6 +11,13 @@ function criptografar() {
   var texto_entrada = input.value;
   var resultado = [];
 
+  if (texto_entrada == "") {
+    document.getElementById("container-2").style.backgroundImage =
+      'url("img/triste.png"), url("img/mensagem.png")';
+
+    document.getElementById("btn-visivel").style.visibility = "hidden";
+  }
+
   for (let i = 0; i < texto_entrada.length; i++) {
     var letra = "";
 
@@ -62,6 +69,13 @@ function descriptografar() {
 
   var texto_entrada = input.value;
 
+  if (texto_entrada == "") {
+    document.getElementById("container-2").style.backgroundImage =
+      'url("img/triste.png"), url("img/mensagem.png")';
+
+    document.getElementById("btn-visivel").style.visibility = "hidden";
+  }
+
   if (texto_entrada.includes("enter")) {
     texto_entrada = texto_entrada.replace(/enter/g, "e");
   }
@@ -84,7 +98,9 @@ function descriptografar() {
 
   input2.innerText = texto_entrada;
 
-  document.getElementById("btn-visivel").style.visibility = "visible";
+  if (texto_entrada != "") {
+    document.getElementById("btn-visivel").style.visibility = "visible";
+  }
 
   input.focus();
   input.value = "";

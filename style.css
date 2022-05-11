@@ -96,7 +96,7 @@ aside {
 }
 
 #container-2 {
-  background-image: url("img//triste.png"), url("img/mensagem.png");
+  background-image: url("img/triste.png"), url("img/mensagem.png");
   background-repeat: no-repeat, no-repeat;
   background-size: 50%, 70%;
   background-position: 50% 40%, 50% 65%;
