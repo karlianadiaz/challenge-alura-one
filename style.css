@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background-color: #f3f5fc;
+}
+
+main {
+  width: auto;
+  height: 740px;
+  margin: 40px 220px;
+  display: flex;
+}
+
+.logo {
+  position: absolute;
+  margin-left: 44px;
+}
+
+.container1 {
+  width: auto;
+  height: 100%;
+  padding-top: 128px;
+  margin-left: 200px;
+  margin-right: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.container1 #botoes {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  padding-bottom: 32px;
+}
+
+.container1 input {
+  width: 100%;
+  box-shadow: 0 0 0 0;
+  border: 0 none;
+  outline: 0;
+  font-style: normal;
+  font-size: 32px;
+  line-height: 48px;
+  font-weight: 400;
+  color: #0a3871;
+  background-color: #f3f5fc;
+}
+
+#texto-1 {
+  padding-top: 410px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#texto-1 p {
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 18px;
+  margin-left: 8px;
+  color: #495057;
+}
+
+#texto-1 img {
+  width: 16px;
+  height: 16px;
+}
+
+aside {
+  margin: 0px;
+  width: 400px;
+  height: auto;
+  background-color: #ffffff;
+  border: none;
+  box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+  border-radius: 32px;
+}
+
+#container-2 {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 32px;
+  align-items: baseline;
+}
+
+#container-2 {
+  background-image: url("img//triste.png"), url("img/mensagem.png");
+  background-repeat: no-repeat, no-repeat;
+  background-size: 50%, 70%;
+  background-position: 50% 40%, 50% 65%;
+}
+
+#input2 {
+  width: auto;
+  height: 630px;
+  margin-bottom: 32px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  color: #495057;
+}
+
+#btn-1 {
+  width: 100%;
+  padding: 24px;
+  background: #0a3871;
+  border-radius: 24px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #ffffff;
+  margin-right: 24px;
+}
+
+#btn-1:hover {
+  background-color: #415b7a;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.btn-2 {
+  width: 100%;
+  padding: 24px;
+  border: 1px solid #0a3871;
+  background-color: #ffffff;
+  border-radius: 24px;
+  color: #0a3871;
+  font-weight: 400;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 19px;
+  text-align: center;
+}
+
+.btn-2:hover {
+  background-color: #e6dddd;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+#btn-visivel {
+  visibility: hidden;
+}
+
+/* Dispositivos extragrandes (laptops e desktops grandes, 1200px e superior) */
+@media only screen and (max-width: 1200px) {
+  main {
+    margin: 40px 40px 40px 100px;
+  }
+
+  .container1 {
+    margin-left: 20px;
+  }
+}
+
+/* Dispositivos grandes (laptops/desktops, 992px e superior)
+ */
+@media only screen and (min-width: 992px) {
+}
+
+/* Dispositivos médios (tablets de paisagem, 768px e superior)
+ */
+@media only screen and (min-width: 768px) {
+}
+
+/* Dispositivos pequenos (tablets de retrato e telefones grandes, 600px e superior)
+ */
+@media only screen and (min-width: 600px) {
+}
+
+/* Dispositivos extra pequenos (telefones, 600px e inferior)
+ */
+@media only screen and (max-width: 600px) {
+  main {
+    display: inline;
+  }
+}

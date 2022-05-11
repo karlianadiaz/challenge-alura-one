@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Codificador</title>
+  </head>
+  <body>
+    <main>
+      <div class="logo">
+        <img src="img/Vector.png" alt="logo" />
+      </div>
+      <div class="container1">
+        <input type="text" id="escreve" placeholder="Digite o texto aqui" />
+        <div id="texto-1">
+          <img src="img/exclamacao.png" alt="informação" />
+          <p>Apenas letras minúsculas e sem acento.</p>
+        </div>
+        <div id="botoes">
+          <button id="btn-1" type="submit" onclick="criptografar()">
+            Criptografar
+          </button>
+          <button class="btn-2" type="submit" onclick="descriptografar()">
+            Descriptografar
+          </button>
+        </div>
+      </div>
+      <aside>
+        <div id="container-2">
+          <p id="input2"></p>
+          <button class="btn-2" id="btn-visivel" onclick="copia()">
+            Copiar
+          </button>
+        </div>
+      </aside>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
